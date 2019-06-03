@@ -76,6 +76,7 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+
 nav {
 	display: flex;
 	justify-content: space-between;
@@ -107,6 +108,21 @@ nav a {
         display: flex;
         justify-content: center;
         margin-bottom: 40px;
+        border-bottom: 1px solid black;
+    }
+}
+
+@media (max-width:500px) {
+    .nava1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+    .abord {
+        border-bottom: 1px solid black;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -137,11 +153,33 @@ header button {
 	text-decoration: none;
 }
 
+@media (max-width:800px) {
+    header .div3 {
+        display: none;
+    }
+
+    header .div4 {
+        width: 98%;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        margin-left: 15%;
+    }
+}
+
 .top {
 	display: flex;
 	padding: 30px;
 	justify-content: space-between;
 	align-items: center;
+}
+
+@media (max-width:500px) {
+    .top {
+        flex-direction: column;
+        padding:30px 0 0 0;
+    }
 }
 
 .middle-img {
@@ -158,6 +196,14 @@ header button {
     padding-bottom: 30px;
 }
 
+@media (max-width:500px) {
+    .bottom {
+        flex-direction: column;
+    }
+}
+
+
+
 footer {
     text-align: center;
     margin:100px;
@@ -166,6 +212,12 @@ footer {
 
 .contact {
 	padding:30px;
+}
+
+@media (max-width:500px) {
+    .contact {
+        padding: 30px 0 0 0;
+    }
 }
 
 
